@@ -1,0 +1,441 @@
+@font-face {
+    font-family: fancy;
+    src: url(../../fonts/Cookie-Regular.ttf);
+}
+
+@font-face {
+    font-family: font2;
+    src: url(../../fonts/Aboreto-Regular.ttf);
+}
+
+@font-face {
+    font-family: font3;
+    src: url(../../fonts/PoiretOne-Regular.ttf);
+}
+
+#div1 {
+    width: 100%;
+    height: 30rem;
+    background-image: url(../images/venue43.jpg);
+    background-size: cover;
+    filter: brightness(70%);
+}
+
+#wed1 {
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    z-index: 1
+}
+
+#div2 {
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+#div2_child1{
+    width: 25rem;
+    margin-top: auto;
+    box-shadow: 2px 2px 2px black;
+}
+
+#div2_child2 {
+    font-size: 0.80rem;
+    max-width: 100ch;
+}
+
+#diamond2 {
+    width: 100%;
+}
+
+#pre1 {
+    font-size: 1.15rem;
+    padding: 1em;
+    line-height: 1.6;
+    color: gray;
+    position: relative;
+    top: 5rem;
+}
+
+
+#linediv {
+    width: 100%;
+    height: 300px;
+}
+
+#hr1 {
+    position: relative;
+    top: 30px;
+    left: 50%;
+}
+
+#span_p {
+    position: relative;
+    left: 46%;
+    top: 60px;
+    letter-spacing: 8px;
+    font-size: 30px;
+}
+
+#p1 {
+    position: relative;
+    left: 30%;
+    top: 80px;
+    font-size: 22px;
+    color: gray;
+}
+
+#package {
+    width: 100%;
+    height: 560px;
+    background-color: white;
+}
+
+.pack {
+    width: 24%;
+    height: 80%;
+    border: 1px solid red;
+    float: left;
+    margin-left: 4%;
+    position: relative;
+    left: 6%;
+    top: 13%;
+}
+
+.headings {
+    width: 100%;
+    height: 40px;
+    border: 1px solid blue;
+    border: none;
+    position: relative;
+    top: 13%;
+    font-size: 23px;
+}
+
+.ol_pa {
+    text-align: center;
+}
+
+.day_venue {
+    text-align: center;
+    font-size: 17px;
+    position: relative;
+    top: 25%;
+    line-height: 2;
+    color: gray;
+}
+
+#middle {
+    font-size: 23px;
+}
+
+#find {
+    font-size: 1.05rem;
+    text-align: center;
+    color: gray;
+}
+
+#contact_us_button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    transform: translate(-50% -50%);
+    background-color: rgb(98, 249, 98);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    left: 50%;
+    margin: 20px auto;
+    transform: translateX(-50%);
+}
+
+#contact_us_button:hover {
+    background-color: rgb(74, 247, 74);
+}
+
+
+#jasmine {
+    border: 1px solid gray;
+}
+
+#bouga {
+    border: 1px solid orange;
+}
+
+#span2_p {
+    position: relative;
+    left: 20%;
+    top: 60px;
+    letter-spacing: 10px;
+    font-size: 30px;
+}
+
+#pic_container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+
+.pic_wed {
+    width: 32vw; 
+    height: 55vh; 
+    position: relative;
+    filter: brightness(50%) ;
+    overflow: hidden; 
+    box-shadow: -2px 5px 2px black;
+    z-index: 2;
+}
+
+.pic_wed img { 
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+}
+
+.columnpics {
+    width: 100%;
+    height: 100%;
+}
+
+.event_lists {
+    position: absolute; 
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    color: white;
+    text-shadow: 3px 0 0 black;
+    font-weight: 400;
+    filter: brightness(100%);
+    font-size: 1.5rem;
+    max-width: 30ch;
+    text-align: center;
+    z-index: 3;
+}
+
+
+
+.pic_wed::after {
+    content: '';
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: whitesmoke;
+    transition: width 1s ease-in-out;
+}
+
+
+.pic_wed:hover::after {
+    width: 100%;
+}
+
+
+.pic_wed:hover {
+    transform: translateX(2px);
+}
+
+
+.pic_wed:hover img {
+    transform: translateX(2px);
+}
+
+
+.pic_wed:hover .event_lists {
+    text-shadow: 1px 1px 10px rgb(255, 255, 255);
+}
+
+
+.pic_wed:hover .event_lists::after {
+    width: 100%;
+}
+
+
+.slideshow {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+.slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: transform 1s ease-in-out;
+    opacity: 0;
+}
+
+
+.card {
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    width: 40%;
+    height: 60%;
+    position: relative;
+}
+
+.image-card {
+    transform: translateX(20%) translateY(5%); 
+    z-index: 2; 
+}
+
+.image-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.content-card {
+    background-color: rgba(109, 244, 208, 0.367);
+    padding: 50px 0px;
+    text-align:center;
+    transform: translateX(-5%) translateY(-5%);
+    
+}
+
+.card-content{
+    font-size: 1.35rem;
+    margin-left:12rem;
+    margin-top: 5rem;
+    text-align: center;
+    max-width: 30ch;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+@keyframes slideIn {
+    0% { transform: translateX(100%); opacity: 0; }
+    10% { transform: translateX(0); opacity: 1; }
+    40% { transform: translateX(0); opacity: 1; }
+    50% { transform: translateX(-100%); opacity: 0; }
+    100% { transform: translateX(-100%); opacity: 0; }
+}
+
+.slide:nth-child(1) {
+    animation: slideIn 30s linear infinite;
+    animation-delay: 0s;
+}
+
+.slide:nth-child(2) {
+    animation: slideIn 30s linear infinite;
+    animation-delay: 10s;
+}
+
+.slide:nth-child(3) {
+    animation: slideIn 30s linear infinite;
+    animation-delay: 20s;
+}
+
+
+@media (max-width: 600px) {
+    #div2_child1, #div2_child2 {
+        width: 100%;
+        float: none;
+    }
+
+    #diamond2 {
+        width: 100%;
+        height: auto;
+        left: 0;
+        top: 20px;
+    }
+
+    #pre1 {
+        font-size: 14px;
+        left: 0;
+        top: 20px;
+    }
+
+    #downloadbutton {
+        width: 100%;
+        left: 0;
+        top: 20px;
+    }
+
+    .pack {
+        width: 90%;
+        margin-left: 5%;
+        left: 0;
+        top: 20px;
+    }
+
+    .pics .pic_wed {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    #load_button {
+        width: 100%;
+        left: 0;
+    }
+}
+
+/* Tablets */
+@media (min-width: 601px) and (max-width: 1024px) {
+    #div2_child1, #div2_child2 {
+        width: 100%;
+        float: none;
+    }
+
+    #diamond2 {
+        width: 80%;
+        height: auto;
+        left: 10%;
+        top: 20px;
+    }
+
+    #pre1 {
+        font-size: 15px;
+        left: 5%;
+        top: 20px;
+    }
+
+    #downloadbutton {
+        width: 80%;
+        left: 10%;
+        top: 20px;
+    }
+
+    .pack {
+        width: 45%;
+        margin-left: 5%;
+        left: 0;
+        top: 20px;
+    }
+
+    .pics .pic_wed {
+        width: 48%;
+        margin-left: 1%;
+        margin-bottom: 20px;
+    }
+
+    #load_button {
+        width: 80%;
+        left: 10%;
+    }
+}

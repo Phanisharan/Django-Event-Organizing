@@ -1,0 +1,50 @@
+{% extends 'Base.html' %}
+
+{% load static %}
+
+{% block title %}
+    Venue
+{% endblock %}
+
+
+{% block static %}
+    <link rel="stylesheet" href="{% static 'css/details/Viewdetail3.css' %}">
+{% endblock %}
+
+{% block body %}
+
+    <header>
+        <h1>Event Decoration Services</h1>
+        <p>Transforming your events into unforgettable experiences</p>
+    </header>
+
+    <section class="gallery">
+        <h2>Our Decorations</h2>
+        <div id="context">
+            At HK Events, we understand that decoration is the heartbeat of any event, setting the tone and creating an unforgettable atmosphere. Our expert team specializes in transforming spaces into stunning visual experiences that reflect your unique vision and style. From elegant floral arrangements and sophisticated lighting to themed decor and personalized touches, we meticulously curate every detail to ensure your event is not only beautiful but also memorable. Whether you’re planning a grand wedding, a corporate gala, or an intimate gathering, our innovative designs and creative concepts will elevate your event, leaving a lasting impression on your guests. Let us help you bring your dream event to life with our exceptional decoration services.
+        </div>
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="{% static 'images/decor1.jpg' %}" alt="Decoration 1">
+                <h3>Elegant Wedding Setup</h3>
+            </div>
+            <div class="gallery-item">
+                <img src="{% static 'images/decor2.jpg' %}" alt="Decoration 2">
+                <h3>Haldi Decoration</h3>
+            </div>
+            <div class="gallery-item">
+                <img src="{% static 'images/decor3.jpg' %}" alt="Decoration 3">
+                <h3>Birthday Party</h3>
+            </div>
+            <div class="gallery-item">
+                <img src="{% static 'images/decor4.jpg' %}" alt="Decoration 4">
+                <h3>Outdoor Celebration</h3>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <button class="book-now">Contact Us</button>
+    </footer>
+
+{% endblock %}

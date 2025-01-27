@@ -1,0 +1,44 @@
+{% extends 'Base.html' %}
+
+{% load static %}
+
+{% block title %}
+    Venue
+{% endblock %}
+
+
+{% block static %}
+    <link rel="stylesheet" href="{% static 'css/details/Viewdetail1.css' %}">
+{% endblock %}
+
+{% block body %}
+
+
+    <header>
+        <h1>Venue</h1>
+    </header>
+
+    <section class="venue-details">
+        <p id="para">At HK Events, we believe that the right venue is essential for a successful event. Whether you're planning a corporate conference, wedding, or celebration, we help you find the perfect space that matches your vision, accommodates your guests, and enhances the overall experience. Our extensive network of venues offers diverse options, from elegant ballrooms to unique outdoor settings, complete with essential amenities and customizable layouts. With our expert guidance, you can effortlessly navigate the venue selection process, ensuring your event is memorable and stress-free. Contact us today to start planning your ideal venue.</p>
+        <div class="venue-images">
+            <div class="image-container">
+                <img src="{% static 'images/villa.jpg' %}" alt="Venue Image 1">
+                <p class="image-caption">Elegant Villa</p>
+            </div>
+            <div class="image-container">
+                <img src="{% static 'images/banquet.jpg' %}" alt="Venue Image 2">
+                <p class="image-caption">Spacious Banquet</p>
+            </div>
+            <div class="image-container">
+                <img src="{% static 'images/convention.jpg' %}" alt="Venue Image 3">
+                <p class="image-caption">Convention Hall</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <button class="book-now">Contact Us</button>
+    </footer>
+
+
+{% endblock %}

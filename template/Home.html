@@ -1,0 +1,147 @@
+{% extends 'Base.html' %}
+
+{% load static %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+
+{% block static %}
+    <link rel="stylesheet" href="{% static 'css/Home.css' %}">
+{% endblock %}
+
+
+
+{% block body %}
+<div id="video_container" >
+    <iframe 
+    id="iframe_video" 
+    src="https://player.vimeo.com/video/890204256?muted=1&autoplay=1&loop=1&background=1&app_id=122963" 
+    frameborder="0" 
+    allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media">
+</iframe>
+
+</div>
+
+<div id="second_container">
+
+    <div id="the_heading">
+        <h2 id="the_heading_content">WELCOME TO HK EVENTS WHERE EVERY MOMENT IS CHERISHED AND EVERY MEMORY IS CRAFTED WITH CARE! </h2>
+    </div>
+
+    <div id="about_container">
+
+
+        <div class="circle-container">
+            <div class="circle">
+                <video autoplay muted loop>
+                    <source src="../static/videos/wedvideo3.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="glass-overlay"></div>
+            </div>
+        </div>
+        
+
+        
+        <div id="about_content" class="about">
+            <p class="about_para">At HK Events, we bring harmony to the whirlwind of wedding planning ideas and dreams.</p>
+            <p class="about_para">Our team knows how crucial your wedding day is. We go beyond planning and become part of your family, making your dream day stress-free and memorable.</p>
+            <p class="about_para">We handle everything from legal paperwork to creating unique wedding designs. Whether it’s a civil, symbolic, or traditional religious wedding, we stay by your side to ensure everything goes perfectly.</p>
+            <p class="about_para">What sets us apart is our network of venues, restaurants, concierge services, accommodations, equipment rentals, and transportation. We provide everything you need with exclusive discounts, so you don't have to search around.</p>
+            <p class="about_para">Trust HK Events to make your special day flawless and unforgettable.</p>
+        </div>
+    </div>
+
+    <div class="line" id="line_two"></div>
+</div>
+
+
+<div class="grid">
+    <div class="track-top">
+        <div class="item" style="background-image: url('../static/images/image1.jpg');"></div>
+        <div class="item" style="background-image: url('../static/images/image2.jpg');"></div>
+        <div class="item" style="background-image: url('../static/images/image3.jpg');"></div>
+        <div class="item" style="background-image: url('../static/images/image4.jpg');"></div>
+        <div class="item" style="background-image: url('../static/images/image5.jpg');"></div>
+        <div class="item" style="background-image: url('../static/images/image6.jpg');"></div>
+
+        <div class="item" style="background-image: url('../static/images/image1.jpg');"></div>
+        <div class="item" style="background-image: url('../static/images/image2.jpg');"></div>
+        <div class="item" style="background-image: url('../static/images/image3.jpg');"></div>
+        <div class="item" style="background-image: url('../static/images/image4.jpg');"></div>
+        <div class="item" style="background-image: url('../static/images/image5.jpg');"></div>
+        <div class="item" style="background-image: url('../static/images/image6.jpg');"></div>
+    </div>
+
+    <div class="track-bottom">
+
+        <div class="item item-fast" style="background-image: url('../static/images/image7.jpg');"></div>
+        <div class="item item-fast" style="background-image: url('../static/images/image8.jpg');"></div>
+        <div class="item item-fast" style="background-image: url('../static/images/image13.jpg');"></div>
+        <div class="item item-fast" style="background-image: url('../static/images/image10.jpg');"></div>
+        <div class="item item-fast" style="background-image: url('../static/images/image11.jpg');"></div>
+        <div class="item item-fast" style="background-image: url('../static/images/image9.jpg');"></div>
+
+    </div>
+</div>
+
+
+<div id="the_heading">
+    <h2 id="the_heading_content">WHAT WE OFFER</h2>
+</div>
+
+
+<div id="event_conatiner">
+    <div class="events">
+        <img src="https://thediamondrock.com/wp-content/uploads/2024/11/love-cave.jpg" alt="">
+        <a href="{% url 'Eventapp:gallery' %}"><span class="event_lists">Gallery</span></a>
+    </div>
+    <div class="events">
+        <img src="https://thediamondrock.com/wp-content/uploads/2024/11/whatweoffer_madame_venue.jpg" alt="">
+        <a href="{% url 'Eventapp:planning-services' %}"><span class="event_lists">Planning service</span></a>
+    </div>
+    <div class="events">
+        <img src="https://thediamondrock.com/wp-content/uploads/2024/11/whatweoffer_wonderland.jpg" alt="">
+        <a href="{% url 'Eventapp:venue' %}"><span class="event_lists">Love Cave Venue</span></a>
+    </div>
+</div>
+
+
+<div class="slideshow">
+    <div class="slide">
+        <div class="card image-card">
+            <img src="{% static 'images/image6.jpg' %}" alt="Wedding Image">
+        </div>
+        <div class="card content-card">
+            <p class="card-content">
+                The event will culminate in a special farewell ceremony, celebrating the bonds we've formed and the new adventures ahead. With inspirational quotes reminding us that every end is a new beginning, we'll bid farewell with smiles and gratitude, looking forward to the future and the paths we'll cross again. 🌟
+            </p>
+        </div>
+    </div>
+    <div class="slide">
+        <div class="card image-card">
+            <img  src="{% static 'images/image5.jpg' %}" alt="Reception Image">
+        </div>
+        <div class="card content-card">
+            <p class="card-content">
+                As the night progresses, we'll enjoy heartfelt speeches from colleagues and friends, reflecting on the journey and expressing good wishes for the future. A sumptuous buffet dinner will be served under the stars, offering a variety of exquisite dishes for everyone to enjoy. Capture the memories at our beachside photo booth and make new ones with fun and candid photos.
+            </p>
+        </div>
+    </div>
+    <div class="slide">
+        <div class="card image-card">
+            <img src="{% static 'images/image1.jpg' %}" alt="Farewell Image">
+        </div>
+        <div class="card content-card">
+        <p class="card-content">
+            Join us for an unforgettable farewell event as we gather at The Sunset Beach on 27th December at 6:00 PM to celebrate the cherished memories we've created together. The evening will commence with welcome drinks and delightful hors d'oeuvres, followed by an enchanting live music performance that will set the perfect ambiance. A heartwarming slideshow will take us down memory lane, showcasing unforgettable moments and shared experiences.
+        </p>
+        </div>
+    </div>
+</div>
+
+
+
+{% endblock %}

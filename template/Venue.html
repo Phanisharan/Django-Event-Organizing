@@ -1,0 +1,134 @@
+{% extends 'Base.html' %}
+
+{% load static %}
+
+{% block title %}
+    Venue
+{% endblock %}
+
+
+{% block static %}
+    <link rel="stylesheet" href="{% static 'css/Venue.css' %}">
+{% endblock %}
+
+{% block body %}
+
+        <div id="div1"></div>
+
+        <div id="div2">
+            <div id="div2_child1">
+                <img id="diamond2" src="{% static 'images/bride-bridegroom1.jpg' %}" alt="" >
+            </div>
+            <div id="div2_child2">
+                <div id="pre1">
+                    Begin Your Dream Day with HK EventsYour special day with HK Events can commence with a breathtaking ceremony on our exclusive sunset wedding terrace, offering panoramic views of the serene Aegean Sea and the picturesque village of Oia. Bathed in the warm glow of the Mediterranean sun, you and your beloved can exchange vows in the presence of close friends and family. Following the ceremony, capture timeless moments amidst the enchanting backdrop, exploring charming windmills, iconic blue domes, and other hidden gems that add a touch of magic to your memories.
+                    Seamless and Elegant Reception by HK EventsYour reception seamlessly follows in the same enchanting location, thoughtfully adorned to reflect your unique style and preferences. The venue, transformed into a haven of elegance and charm, sets the stage for an unforgettable celebration. Indulge in a gourmet feast, dance under the stars, and create memories that will be cherished forever.
+                    Customized Packages by HK EventsTo make your dream wedding a reality, HK Events offers three exclusive packages tailored to meet your specific needs and desires. Each package is designed to provide you with a stress-free, personalized experience, ensuring every detail is perfect. Whether you desire an intimate gathering or a grand celebration, HK Events is here to bring your vision to life.
+                    Is this more in line with what you're looking for? Let me know if there's anything else you'd like to add or change!
+                </div>
+            </div>
+        </div>
+
+        <div id="linediv">
+            <hr id="hr1" style="width: 3px; height: 150px; transform: rotate(180deg);">
+            <span id="span_p">POINTS</span>
+            <p id="p1">Here’s a more concise presentation of the packages for The Love Cave:</p>
+        </div>
+
+        <div id="package">
+
+            <div class="pack" id="olive">
+                <div class="headings"><p class="ol_pa">MANGO PACKAGE<p></div>
+                    <p class="day_venue" id="middle">Only Ceremony</p>
+                    <p class="day_venue">2 - 6 guests</p>
+                    <p class="day_venue">Venue rental for one hour</p>
+            </div>
+
+            <div class="pack" id="jasmine">
+                <div class="headings"><p class="ol_pa">LOTUS PACKAGE<p></div>
+                    <p class="day_venue" id="middle">Ceremony and dinner</p>
+                    <p class="day_venue">2 - 6 guests</p>
+                    <p class="day_venue">Two nights at the villa for the</p>
+                    <p class="day_venue">couple</p>
+                    <p class="day_venue">Breakfast included</p>
+                    <p class="day_venue">Rental venue for tone day</p>
+            </div>
+
+            <div class="pack" id="bouga">
+                <div class="headings"><p class="ol_pa">PEACOCK PACKAGE<p></div>
+                    <p class="day_venue" id="middle">Ceremony and dinner</p>
+                    <p class="day_venue">4 - 16 guests</p>
+                    <p class="day_venue">Two nights in two villas (for 4</p>
+                    <p class="day_venue">guests)</p>
+                    <p class="day_venue">Breakfast included</p>
+                    <p class="day_venue">Check-in/out transportation</p>
+                    <p class="day_venue">included</p>
+                    <p class="day_venue">Rental venue for one day</p>
+            </div>
+        </div>
+
+        <div id="find">
+            <p>To Know more combinations contact for  brochure that can be tailor-made to suit your preferences. We offer flexible options to ensure your special day is exactly as you envision it!
+            </p>
+        </div>
+
+        
+        <a href="{% url 'Eventapp:contact' %}"><button id="contact_us_button">Contact Us</button></a>
+
+        <div id="linediv">
+            <hr id="hr1" style="width: 3px; height: 150px; transform: rotate(180deg);">
+            <span id="span2_p">SPECIAL MOMENTS THAT LIVE FOREVER!
+            </span>
+        </div>
+
+
+    <div id="pic_container">
+        <div class="pic_wed">
+            <img class="columnpics" src="{% static 'images/wed10.jpg' %}" alt="" >
+            <a href="{% url 'Eventapp:gallery' %}"><span class="event_lists">Aditi & Aditya</span></a>
+        </div>
+        <div class="pic_wed">
+            <img  class="columnpics" src="{% static 'images/wed4.jpg' %}" alt="" >
+            <a href="{% url 'Eventapp:gallery' %}"><span class="event_lists">Sherya & Rohan</span></a>
+                
+        </div>
+            <div class="pic_wed">
+            <img  class="columnpics" src="{% static 'images/wed7.jpg' %}" alt="" >
+            <a href="{% url 'Eventapp:gallery' %}"><span class="event_lists">Vidya & Yash</span></a>
+        </div>
+    </div>
+
+    <div class="slideshow">
+        <div class="slide">
+            <div class="card image-card">
+                <img src="{% static 'images/image6.jpg' %}" alt="Wedding Image">
+            </div>
+            <div class="card content-card">
+                <p class="card-content">
+                    The event will culminate in a special farewell ceremony, celebrating the bonds we've formed and the new adventures ahead. With inspirational quotes reminding us that every end is a new beginning, we'll bid farewell with smiles and gratitude, looking forward to the future and the paths we'll cross again. 🌟
+                </p>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="card image-card">
+                <img  src="{% static 'images/image5.jpg' %}" alt="Reception Image">
+            </div>
+            <div class="card content-card">
+                <p class="card-content">
+                    As the night progresses, we'll enjoy heartfelt speeches from colleagues and friends, reflecting on the journey and expressing good wishes for the future. A sumptuous buffet dinner will be served under the stars, offering a variety of exquisite dishes for everyone to enjoy. Capture the memories at our beachside photo booth and make new ones with fun and candid photos.
+                </p>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="card image-card">
+                <img src="{% static 'images/image1.jpg' %}" alt="Farewell Image">
+            </div>
+            <div class="card content-card">
+            <p class="card-content">
+                Join us for an unforgettable farewell event as we gather at The Sunset Beach on 27th December at 6:00 PM to celebrate the cherished memories we've created together. The evening will commence with welcome drinks and delightful hors d'oeuvres, followed by an enchanting live music performance that will set the perfect ambiance. A heartwarming slideshow will take us down memory lane, showcasing unforgettable moments and shared experiences.
+            </p>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,77 @@
+{% extends 'Base.html' %}
+
+{% load static %}
+
+{% block title %}
+    Gallery
+{% endblock %}
+
+
+{% block static %}
+    <link rel="stylesheet" href="{% static 'css/Gallery.css' %}">
+{% endblock %}
+
+{% block body %}
+    <header>
+        <div id="heading">
+            <h1 id="heading_m">Marriage Gallery</h1>
+            <p style="font-size: 1rem;">Explore the moments captured from our events.</p>
+        </div>
+    </header>
+    <div id="heading1">
+        <h1>Celebrations At The Hk Events</h1>
+    </div>
+    <div id="data1">
+        <p>
+            Each pillar and each wall whispers tales of timeless love
+        </p>
+    </div>
+    <div id="data2">
+        <p>
+            From emotional wedding ceremonies to grand receptions, each image tells a story of love, unity, and cherished memories. Our gallery showcases the magic of weddings held at our venue, offering inspiration and excitement for your own special day.
+        </p>
+    </div>
+    <main>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="{% static 'images/image13.jpg' %}" alt="Event 1">
+            </div>
+            <div class="gallery-item">
+                <img src="{% static 'images/image5.jpg' %}" alt="Event 2">
+            </div>
+            <div class="gallery-item">
+                <img src="{% static 'images/image10.jpg' %}" alt="Event 3">
+            </div>
+            <div class="gallery-item">
+                <img src="{% static 'images/image2.jpg' %}" alt="Event 5">
+            </div>
+            <div class="gallery-item">
+                <img src="{% static 'images/image6.jpg' %}" alt="Event 6">
+            </div>
+            <div class="gallery-item">
+                <img src="{% static 'images/image7.jpg' %}" alt="Event 7">
+            </div>
+            <div class="gallery-item">
+                <img src="{% static 'images/image8.jpg' %}" alt="Event 8">
+            </div>
+            <div class="gallery-item">
+                <img src="{% static 'images/image9.jpg' %}" alt="Event 9">
+            </div>
+            <div class="gallery-item">
+                <img src="{% static 'images/image3.jpg' %}" alt="Event 10">
+            </div>
+            <div class="gallery-item">
+                <img src="{% static 'images/image11.jpg' %}" alt="Event 11">
+            </div>
+            <div class="gallery-item">
+                <img src="{% static 'images/image12.jpg' %}" alt="Event 12">
+            </div>
+            <div class="gallery-item">
+                <img src="{% static 'images/image14.jpg' %}" alt="Event 13">
+            </div>
+        </div>
+    </main>
+    <div id="image_container">
+        <p id="text">Create your own unforgettable moments</p>
+    </div>
+{% endblock %}
